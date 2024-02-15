@@ -34,8 +34,12 @@ for (i = 0; i < buttons.length; i++) {
           let total = document.getElementById("total");
           let totalPriceForProduct = totalPrice - discount;
           total.innerText = totalPriceForProduct.toFixed(2);
+          document.getElementById("input-coupon").value = "";
+        } else {
+          document.getElementById("input-coupon").value = "";
         }
       } else {
+        document.getElementById("input-coupon").value = "";
         alert("Please Buy Something about 200$ or more for getting Discount");
       }
     });
